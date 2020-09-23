@@ -41,21 +41,22 @@
         <p style = "float: left; margin-right: 10px;">Selecione quem começa:</p>
 
         <!-- Uma função para a opção escolhida --> 
-        <select name="Selecione" id="select" onclick="quemJoga()"> 
+        <!-- <select name="Selecione" id="select" onclick="quemJoga()"> 
             <option value="jogador" >Jogador</option>
             <option value="computador" >Computador</option>
+        </select>  -->
+        
+        <select name="Selecione" id="select" onchange="vezjogo()"> 
+            <option value=""></option>
+            <option value="jogador">Jogador</option>
+            <option value="computador">Computador</option>
         </select> 
-        <!-- Uma função para cada opção 
-        <select name="Selecione" id="select"> 
-            <option value="jogador" onchange="vezdoJogador()">Jogador</option>
-            <option value="computador" onchange="vezdaCPU()">Computador</option>
-        </select> --> 
 
 
 
     </div>
     <div id = "header">
-        <p style = "float: left; margin-right: 10px;">Quem joga:</p>
+        <p style = "float: left; margin-right: 10px;" id="vezJogo"></p>
         <img src="" border="0" height="50">
     </div>
     <div class="tabela">

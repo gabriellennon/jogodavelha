@@ -13,16 +13,26 @@ function vezdoCPU(){
     playTime = document.querySelectorAll("div#header img")[0];
     playTime.setAttribute("src", "x.jpg");
 }
-
-function quemJoga(){
-    if(document.getElementsByTagName("jogador" == "jogador")){
+function vezjogo(){
+    let select = document.getElementById("select").value;
+    document.getElementById("vezJogo").innerHTML = "Quem joga: "
+    if(select == "jogador"){
         vezdojogador();
-    }else if (document.getElementsByTagName("computador") == "computador"){
+    }
+    else {
         vezdoCPU();
     }
 }
 
-quemJoga();
-inicializarEspacos();
-jogar();
-cpu();
+// function quemJoga(){
+//     if(document.getElementsByTagName("jogador" == "jogador")){
+//         vezdojogador();
+//     }else if (document.getElementsByTagName("computador") == "computador"){
+//         vezdoCPU();
+//     }
+// }
+
+// quemJoga();
+// inicializarEspacos();
+// jogar();
+// cpu();
