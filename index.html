@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <title>Jogo da velha</title>
+    <style type="text/css">
+
+        
+        #selecione{
+            margin: auto;
+            margin-top: 10px;
+            width: 252px;
+            height: 40px;
+        }
+        
+        #header{
+            margin: auto;
+            margin-top: 40px;
+            width: 252px;
+            height: 80px;
+        }
+
+        .espaco{
+            width: 80px;
+            height: 60px;
+            border: 2px solid #000;
+            float: left;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        .tabela{
+            margin: auto;
+            width: 252px;
+            height: 252px;
+        }
+
+    </style>
+</head>
+<body>
+    <div id = "selecione">
+        <p style = "float: left; margin-right: 10px;">Selecione quem começa:</p>
+
+        <!-- Uma função para a opção escolhida --> 
+        <select name="Selecione" id="select" onclick="quemJoga()"> 
+            <option value="jogador" >Jogador</option>
+            <option value="computador" >Computador</option>
+        </select> 
+        <!-- Uma função para cada opção 
+        <select name="Selecione" id="select"> 
+            <option value="jogador" onchange="vezdoJogador()">Jogador</option>
+            <option value="computador" onchange="vezdaCPU()">Computador</option>
+        </select> --> 
+
+
+
+    </div>
+    <div id = "header">
+        <p style = "float: left; margin-right: 10px;">Quem joga:</p>
+        <img src="" border="0" height="50">
+    </div>
+    <div class="tabela">
+        <div id="a1" class="espaco" jogada="" onclick="jogar()"></div>
+        <div id="a2" class="espaco" jogada="" onclick="jogar()"></div>
+        <div id="a3" class="espaco" jogada="" onclick="jogar()"></div>
+
+        <div id="b1" class="espaco" jogada="" onclick="jogar()"></div>
+        <div id="b2" class="espaco" jogada="" onclick="jogar()"></div>
+        <div id="b3" class="espaco" jogada="" onclick="jogar()"></div>
+
+        <div id="c1" class="espaco" jogada="" onclick="jogar()"></div>
+        <div id="c2" class="espaco" jogada="" onclick="jogar()"></div>
+        <div id="c3" class="espaco" jogada="" onclick="jogar()"></div>
+
+    </div>
+<script type="text/javascript" src="game.js"></script>
+</body>
+</html>
